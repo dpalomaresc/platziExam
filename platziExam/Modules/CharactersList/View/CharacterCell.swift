@@ -10,7 +10,6 @@ import SwiftUI
 struct CharacterCell: View {
     var character: Character
 
-    // MARK: - Body View -
     var body: some View {
         HStack {
             CacheAsyncImage(url: character.imageUrl) { image in
@@ -18,21 +17,19 @@ struct CharacterCell: View {
                     .image?
                     .resizable()
             }
-            .scaledToFit()
-            .frame(width: 80, height: 80)
-            .clipShape(UnevenRoundedRectangle(topLeadingRadius: 16, bottomTrailingRadius: 16))
-
+            .frame(width: 130, height: 180)
+            .cornerRadius(10)
             
             Text(character.name)
-                .padding(.leading, 24)
-                .textCase(.uppercase)
+//                .textCase(.uppercase)
                 .font(.headline)
+                .foregroundColor(.white)
         }
     }
 }
 
 #Preview {
-    CharacterCell(character: Character(name: "",
+    CharacterCell(character: Character(name: "Luke Skywalker",
                                        height: "",
                                        mass: "",
                                        hairColor: "",
@@ -48,5 +45,5 @@ struct CharacterCell: View {
                                        created: "",
                                        edited: "",
                                        url: "",
-                                       imageUrl: nil))
+                                       imageUrl: URL(string: "https://vieraboschkova.github.io/swapi-gallery/static/assets/img/people/1.jpg")))
 }

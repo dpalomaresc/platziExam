@@ -11,4 +11,5 @@ protocol CharactersListViewModelProtocol {
     var isLoading: Bool { get set }
     var characters: [Character] { get set }
     func fetchCharactersList()
+    func shouldLoadData(id: Int) -> Bool
 }

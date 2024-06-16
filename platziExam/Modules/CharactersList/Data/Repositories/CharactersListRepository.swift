@@ -16,7 +16,6 @@ final class CharacterListRepository: CharacterRepositoryProtocol {
         let characters = charactersResponse.results.compactMap { character in
             return Character(with: character)
         }
-        print(characters)
         return characters
     }
 }

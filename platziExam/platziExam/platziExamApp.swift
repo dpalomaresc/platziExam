@@ -11,7 +11,7 @@ import SwiftUI
 struct platziExamApp: App {
     var body: some Scene {
         WindowGroup {
-            AppRouter.makeStarWarsCharacterstView()
+            AppRouter.buildStarWarsCharacterstView()
         }
     }
 }

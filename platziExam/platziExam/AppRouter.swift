@@ -9,9 +9,9 @@ import SwiftUI
 
 enum AppRouter {
     
-    static func makeStarWarsCharacterstView() -> some View {
+    static func buildStarWarsCharacterstView() -> some View {
         let viewModel = CharactersListViewModel()
-        let view = StarWarsCharactersList(viewModel: viewModel)
+        let view = StarWarsCharactersListView(viewModel: viewModel)
         return view
     }
     

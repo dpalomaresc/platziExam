@@ -11,6 +11,7 @@ import SwiftUI
 final class CharactersListViewModel {
     var isLoading: Bool = false
     var characters: [Character]
+    private var page: Int = 1
     private var fetchCharactersListUseCase = FetchCharactersListUseCase(CharacterListRepository())
     
     init() {
@@ -20,18 +21,26 @@ final class CharactersListViewModel {
 }
  
 extension CharactersListViewModel: CharactersListViewModelProtocol {
+    
     func fetchCharactersList() {
         isLoading = true
         Task {
             do {
-                let list = try await fetchCharactersListUseCase.execute()
+                let list = try await fetchCharactersListUseCase.execute(page)
+                page += 1
                 await MainActor.run {
                     isLoading = false
-                    characters = list
+                    for character in list {
+                        characters.append(character)
+                    }
                 }
             } catch {
                 isLoading = false
             }
         }
+    }
+    
+    func shouldLoadData(id: Int) -> Bool {
+        return id == characters.last?.hashValue
     }
 }
