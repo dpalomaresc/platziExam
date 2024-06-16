@@ -7,24 +7,28 @@
 
 import Foundation
 
-enum StarWarsListRequest {
+enum StarWarsListCalls {
     case getCharacters(page: Int)
 }
 
-struct TopMovieRequest: APIRequest {
-    let topMovieCall: StarWarsListRequest
+struct StarWarsListRequest: APIRequest {
+    let calls: StarWarsListCalls
     var headers: [String : String]?
     var parameters: [String : Any]?
 }
 
-extension TopMovieRequest {
+extension StarWarsListRequest {
     
     var host: String {
         "https://swapi.dev/api"
     }
     
     var path: String {
-        "/people/"
+        if case .getCharacters(let page) = calls {
+            return "/people/?page=\(page)"
+        } else {
+            return "/people/"
+        }
     }
     
     var method: HTTPRequestMethod {
