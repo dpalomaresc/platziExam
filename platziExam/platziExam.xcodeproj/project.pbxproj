@@ -14,6 +14,13 @@
 		D442A7742C1D23BE00CDD897 /* platziExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A7732C1D23BE00CDD897 /* platziExamTests.swift */; };
 		D442A77E2C1D23BE00CDD897 /* platziExamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A77D2C1D23BE00CDD897 /* platziExamUITests.swift */; };
 		D442A7802C1D23BE00CDD897 /* platziExamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A77F2C1D23BE00CDD897 /* platziExamUITestsLaunchTests.swift */; };
+		D442A78E2C1D26AC00CDD897 /* StarWarsCharactersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A78D2C1D26AC00CDD897 /* StarWarsCharactersList.swift */; };
+		D442A7922C1E9CBA00CDD897 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A7912C1E9CBA00CDD897 /* APIRequest.swift */; };
+		D442A7942C1E9CD700CDD897 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A7932C1E9CD700CDD897 /* RequestMethod.swift */; };
+		D442A7982C1E9E5800CDD897 /* AsyncRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A7972C1E9E5800CDD897 /* AsyncRepositoryType.swift */; };
+		D442A79A2C1E9E8B00CDD897 /* AsyncRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A7992C1E9E8B00CDD897 /* AsyncRepository.swift */; };
+		D442A79C2C1E9F5D00CDD897 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A79B2C1E9F5D00CDD897 /* NetworkError.swift */; };
+		D442A79E2C1EA0E900CDD897 /* StarWarsListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A79D2C1EA0E900CDD897 /* StarWarsListRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		D442A7792C1D23BE00CDD897 /* platziExamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = platziExamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D442A77D2C1D23BE00CDD897 /* platziExamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platziExamUITests.swift; sourceTree = "<group>"; };
 		D442A77F2C1D23BE00CDD897 /* platziExamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platziExamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D442A78D2C1D26AC00CDD897 /* StarWarsCharactersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsCharactersList.swift; sourceTree = "<group>"; };
+		D442A7912C1E9CBA00CDD897 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		D442A7932C1E9CD700CDD897 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		D442A7972C1E9E5800CDD897 /* AsyncRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRepositoryType.swift; sourceTree = "<group>"; };
+		D442A7992C1E9E8B00CDD897 /* AsyncRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRepository.swift; sourceTree = "<group>"; };
+		D442A79B2C1E9F5D00CDD897 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		D442A79D2C1EA0E900CDD897 /* StarWarsListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsListRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +88,8 @@
 		D442A7562C1D23BB00CDD897 = {
 			isa = PBXGroup;
 			children = (
+				D442A7902C1E974200CDD897 /* NetworkingLayer */,
+				D442A78C2C1D266E00CDD897 /* Modules */,
 				D442A7612C1D23BB00CDD897 /* platziExam */,
 				D442A7722C1D23BE00CDD897 /* platziExamTests */,
 				D442A77C2C1D23BE00CDD897 /* platziExamUITests */,
@@ -125,6 +141,35 @@
 				D442A77F2C1D23BE00CDD897 /* platziExamUITestsLaunchTests.swift */,
 			);
 			path = platziExamUITests;
+			sourceTree = "<group>";
+		};
+		D442A78C2C1D266E00CDD897 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D442A78F2C1E96BE00CDD897 /* View */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D442A78F2C1E96BE00CDD897 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D442A78D2C1D26AC00CDD897 /* StarWarsCharactersList.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D442A7902C1E974200CDD897 /* NetworkingLayer */ = {
+			isa = PBXGroup;
+			children = (
+				D442A7912C1E9CBA00CDD897 /* APIRequest.swift */,
+				D442A7972C1E9E5800CDD897 /* AsyncRepositoryType.swift */,
+				D442A7992C1E9E8B00CDD897 /* AsyncRepository.swift */,
+				D442A7932C1E9CD700CDD897 /* RequestMethod.swift */,
+				D442A79B2C1E9F5D00CDD897 /* NetworkError.swift */,
+				D442A79D2C1EA0E900CDD897 /* StarWarsListRequest.swift */,
+			);
+			path = NetworkingLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +302,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D442A7982C1E9E5800CDD897 /* AsyncRepositoryType.swift in Sources */,
+				D442A79C2C1E9F5D00CDD897 /* NetworkError.swift in Sources */,
+				D442A78E2C1D26AC00CDD897 /* StarWarsCharactersList.swift in Sources */,
 				D442A7652C1D23BB00CDD897 /* ContentView.swift in Sources */,
+				D442A79E2C1EA0E900CDD897 /* StarWarsListRequest.swift in Sources */,
+				D442A7922C1E9CBA00CDD897 /* APIRequest.swift in Sources */,
+				D442A7942C1E9CD700CDD897 /* RequestMethod.swift in Sources */,
+				D442A79A2C1E9E8B00CDD897 /* AsyncRepository.swift in Sources */,
 				D442A7632C1D23BB00CDD897 /* platziExamApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
