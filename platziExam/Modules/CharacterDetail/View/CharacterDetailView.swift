@@ -40,7 +40,7 @@ struct CharacterDetailView<Model>: View where Model: CharacterDetailViewModelPro
                 }
                 .padding(12)
             }
-        }
+        }.background(.backGroundApp)
     }
 }
 

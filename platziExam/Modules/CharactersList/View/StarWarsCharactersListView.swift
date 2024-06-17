@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Lottie
 
 struct StarWarsCharactersListView<Model>: View where Model: CharactersListViewModelProtocol {
     @State private var viewModel: Model
@@ -15,7 +16,7 @@ struct StarWarsCharactersListView<Model>: View where Model: CharactersListViewMo
     }
     var body: some View {
         NavigationStack {
-            VStack {
+            ZStack {
                 List {
                     ForEach(viewModel.characters, id: \.self) { character in
                         NavigationLink(destination: CharactersListRouter.buildCharacterDetailsView(with: character)) {
@@ -26,11 +27,18 @@ struct StarWarsCharactersListView<Model>: View where Model: CharactersListViewMo
                                     }
                                 }
                         }
-                    }.listRowBackground(Color.backGroundComponent)
-                }.navigationTitle("Star Wars Characters")
-                
+                    }
+                    .listRowBackground(Color.backGroundComponent)
+                }
+                .navigationTitle("Star Wars Characters")
                 .scrollContentBackground(.hidden)
-                    .background(.backGroundApp)
+                .background(.backGroundApp)
+                if viewModel.isLoading {
+                    LottieView(animation: .named("r2d2"))
+                        .looping()
+                        .frame(width: 200, height: 200)
+                        .cornerRadius(100)
+                }                    
             }
         }
     }

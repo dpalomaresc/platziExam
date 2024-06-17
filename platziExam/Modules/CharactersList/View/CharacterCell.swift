@@ -18,10 +18,10 @@ struct CharacterCell: View {
                     .resizable()
             }
             .frame(width: 130, height: 180)
-            .cornerRadius(10)
+            .cornerRadius(20)
+            .shadow(radius: 30)
             
             Text(character.name)
-//                .textCase(.uppercase)
                 .font(.headline)
                 .foregroundColor(.white)
         }
