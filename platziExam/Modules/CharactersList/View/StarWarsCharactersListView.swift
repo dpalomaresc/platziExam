@@ -20,7 +20,7 @@ struct StarWarsCharactersListView<Model>: View where Model: CharactersListViewMo
                 List {
                     ForEach(viewModel.characters, id: \.self) { character in
                         NavigationLink(destination: CharactersListRouter.buildCharacterDetailsView(with: character)) {
-                            CharacterCell(character: character)
+                            CharacterCell(viewModel: viewModel, character: character)
                                 .onAppear{
                                     if viewModel.shouldLoadData(id: character.hashValue) {
                                         viewModel.fetchCharactersList()
@@ -40,10 +40,15 @@ struct StarWarsCharactersListView<Model>: View where Model: CharactersListViewMo
                         .cornerRadius(100)
                 }                    
             }
-        }
+        }.onAppear {
+            viewModel.fetchCharactersList()
+        }.alert(
+            "Network connection seems to be offline.",
+            isPresented: $viewModel.networkStatus
+        ) {}
     }
 }
 
 #Preview {
-    StarWarsCharactersListView(viewModel: CharactersListViewModel())
+    StarWarsCharactersListView(viewModel: CharactersListViewModel(fetchCharactersListUseCase: FetchCharactersListUseCase(CharacterListRepository(), CharacterListDataBaseUseCase(CharacterListDataSourceDB())), characterListDBUseCase: CharacterListDataBaseUseCase(CharacterListDataSourceDB())))
 }

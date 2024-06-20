@@ -22,7 +22,7 @@
 		D442A79C2C1E9F5D00CDD897 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A79B2C1E9F5D00CDD897 /* NetworkError.swift */; };
 		D442A79E2C1EA0E900CDD897 /* StarWarsListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A79D2C1EA0E900CDD897 /* StarWarsListRequest.swift */; };
 		D442A7A02C1EA28B00CDD897 /* CharactersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A79F2C1EA28B00CDD897 /* CharactersListViewModel.swift */; };
-		D442A7A32C1EA30300CDD897 /* CharactersListViewModelrotocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A7A22C1EA30300CDD897 /* CharactersListViewModelrotocol.swift */; };
+		D442A7A32C1EA30300CDD897 /* CharactersListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A7A22C1EA30300CDD897 /* CharactersListViewModelProtocol.swift */; };
 		D442A7AA2C1EA51E00CDD897 /* CharactersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A7A92C1EA51E00CDD897 /* CharactersList.swift */; };
 		D442A7B12C1EACBF00CDD897 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A7B02C1EACBF00CDD897 /* String+.swift */; };
 		D442A7B52C1EAE1C00CDD897 /* CharacterRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A7B42C1EAE1C00CDD897 /* CharacterRepositoryProtocol.swift */; };
@@ -39,6 +39,23 @@
 		D442A7D62C1F2AED00CDD897 /* CharactersListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A7D52C1F2AED00CDD897 /* CharactersListRouter.swift */; };
 		D442A7DD2C1FC00600CDD897 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D442A7DC2C1FC00600CDD897 /* Lottie */; };
 		D442A7E22C1FC8B100CDD897 /* r2d2.json in Resources */ = {isa = PBXBuildFile; fileRef = D442A7E12C1FC8B100CDD897 /* r2d2.json */; };
+		D442A7E52C2113DF00CDD897 /* CharacterObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A7E42C2113DF00CDD897 /* CharacterObject.swift */; };
+		D442A7E72C2113F400CDD897 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D442A7E62C2113F400CDD897 /* RealmSwift */; };
+		D442A7E82C2113F400CDD897 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = D442A7E62C2113F400CDD897 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D442A7EC2C2129A400CDD897 /* ManagerDBProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A7EB2C2129A400CDD897 /* ManagerDBProtocol.swift */; };
+		D442A7EE2C212B8700CDD897 /* RealDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A7ED2C212B8700CDD897 /* RealDataManager.swift */; };
+		D442A7F02C212CAA00CDD897 /* RealmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A7EF2C212CAA00CDD897 /* RealmProvider.swift */; };
+		D442A7F22C21356C00CDD897 /* CharacterRepositoryDBProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A7F12C21356B00CDD897 /* CharacterRepositoryDBProtocol.swift */; };
+		D442A7F42C2136A300CDD897 /* CharacterListDataSourceDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A7F32C2136A300CDD897 /* CharacterListDataSourceDB.swift */; };
+		D442A7F62C2139B700CDD897 /* CharacterListDataBaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442A7F52C2139B700CDD897 /* CharacterListDataBaseUseCase.swift */; };
+		D453B73E2C23946A006C2553 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453B73D2C23946A006C2553 /* VideoPlayerView.swift */; };
+		D453B7402C2394D1006C2553 /* VideoPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = D453B73F2C2394D1006C2553 /* VideoPlayer */; };
+		D453B7452C239DDD006C2553 /* CharacterListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D453B7442C239DDD006C2553 /* CharacterListViewModelTest.swift */; };
+		D45CCD8F2C220529005E7C26 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CCD8E2C220529005E7C26 /* NetworkMonitor.swift */; };
+		D45CCD922C2263C2005E7C26 /* TabBarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CCD912C2263C2005E7C26 /* TabBarMenu.swift */; };
+		D45CCD9A2C2265DD005E7C26 /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CCD992C2265DD005E7C26 /* TabBarRouter.swift */; };
+		D45CCD9E2C2278BF005E7C26 /* FavoriteCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CCD9D2C2278BF005E7C26 /* FavoriteCharacterViewModel.swift */; };
+		D45CCDA02C227D6A005E7C26 /* FavoriteCharacterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45CCD9F2C227D6A005E7C26 /* FavoriteCharacterRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +74,20 @@
 			remoteInfo = platziExam;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D442A7E92C2113F500CDD897 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D442A7E82C2113F400CDD897 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D442A75F2C1D23BB00CDD897 /* platziExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = platziExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,7 +108,7 @@
 		D442A79B2C1E9F5D00CDD897 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		D442A79D2C1EA0E900CDD897 /* StarWarsListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsListRequest.swift; sourceTree = "<group>"; };
 		D442A79F2C1EA28B00CDD897 /* CharactersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewModel.swift; sourceTree = "<group>"; };
-		D442A7A22C1EA30300CDD897 /* CharactersListViewModelrotocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewModelrotocol.swift; sourceTree = "<group>"; };
+		D442A7A22C1EA30300CDD897 /* CharactersListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewModelProtocol.swift; sourceTree = "<group>"; };
 		D442A7A92C1EA51E00CDD897 /* CharactersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersList.swift; sourceTree = "<group>"; };
 		D442A7B02C1EACBF00CDD897 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		D442A7B42C1EAE1C00CDD897 /* CharacterRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryProtocol.swift; sourceTree = "<group>"; };
@@ -93,6 +124,21 @@
 		D442A7D22C1F282000CDD897 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		D442A7D52C1F2AED00CDD897 /* CharactersListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListRouter.swift; sourceTree = "<group>"; };
 		D442A7E12C1FC8B100CDD897 /* r2d2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = r2d2.json; sourceTree = "<group>"; };
+		D442A7E42C2113DF00CDD897 /* CharacterObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterObject.swift; sourceTree = "<group>"; };
+		D442A7EB2C2129A400CDD897 /* ManagerDBProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerDBProtocol.swift; sourceTree = "<group>"; };
+		D442A7ED2C212B8700CDD897 /* RealDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealDataManager.swift; sourceTree = "<group>"; };
+		D442A7EF2C212CAA00CDD897 /* RealmProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmProvider.swift; sourceTree = "<group>"; };
+		D442A7F12C21356B00CDD897 /* CharacterRepositoryDBProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryDBProtocol.swift; sourceTree = "<group>"; };
+		D442A7F32C2136A300CDD897 /* CharacterListDataSourceDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListDataSourceDB.swift; sourceTree = "<group>"; };
+		D442A7F52C2139B700CDD897 /* CharacterListDataBaseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListDataBaseUseCase.swift; sourceTree = "<group>"; };
+		D453B73D2C23946A006C2553 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		D453B7412C2395B3006C2553 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D453B7442C239DDD006C2553 /* CharacterListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModelTest.swift; sourceTree = "<group>"; };
+		D45CCD8E2C220529005E7C26 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		D45CCD912C2263C2005E7C26 /* TabBarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMenu.swift; sourceTree = "<group>"; };
+		D45CCD992C2265DD005E7C26 /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
+		D45CCD9D2C2278BF005E7C26 /* FavoriteCharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCharacterViewModel.swift; sourceTree = "<group>"; };
+		D45CCD9F2C227D6A005E7C26 /* FavoriteCharacterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCharacterRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +146,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D442A7E72C2113F400CDD897 /* RealmSwift in Frameworks */,
+				D453B7402C2394D1006C2553 /* VideoPlayer in Frameworks */,
 				D442A7DD2C1FC00600CDD897 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,12 +169,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D42FE57C2C236F60003C4D51 /* ViedeoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				D453B73D2C23946A006C2553 /* VideoPlayerView.swift */,
+			);
+			path = ViedeoPlayer;
+			sourceTree = "<group>";
+		};
 		D442A7562C1D23BB00CDD897 = {
 			isa = PBXGroup;
 			children = (
 				D442A7DE2C1FC52800CDD897 /* Resources */,
 				D442A7C72C1EC08E00CDD897 /* Utils */,
 				D442A7AF2C1EACB000CDD897 /* Extensions */,
+				D442A7EA2C21297F00CDD897 /* DataBaseLayer */,
 				D442A7902C1E974200CDD897 /* NetworkingLayer */,
 				D442A78C2C1D266E00CDD897 /* Modules */,
 				D442A7612C1D23BB00CDD897 /* platziExam */,
@@ -150,6 +207,7 @@
 		D442A7612C1D23BB00CDD897 /* platziExam */ = {
 			isa = PBXGroup;
 			children = (
+				D453B7412C2395B3006C2553 /* Info.plist */,
 				D442A7C52C1EBBA900CDD897 /* AppRouter.swift */,
 				D442A7622C1D23BB00CDD897 /* platziExamApp.swift */,
 				D442A7642C1D23BB00CDD897 /* ContentView.swift */,
@@ -171,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				D442A7732C1D23BE00CDD897 /* platziExamTests.swift */,
+				D453B7422C239B18006C2553 /* Modules */,
 			);
 			path = platziExamTests;
 			sourceTree = "<group>";
@@ -187,6 +246,9 @@
 		D442A78C2C1D266E00CDD897 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D42FE57C2C236F60003C4D51 /* ViedeoPlayer */,
+				D45CCD942C226548005E7C26 /* FavoriteCharacter */,
+				D45CCD902C2263A9005E7C26 /* TabBar */,
 				D442A7CD2C1F26AD00CDD897 /* CharacterDetail */,
 				D442A7C42C1EBA8A00CDD897 /* CharactersList */,
 			);
@@ -218,7 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				D442A79F2C1EA28B00CDD897 /* CharactersListViewModel.swift */,
-				D442A7A22C1EA30300CDD897 /* CharactersListViewModelrotocol.swift */,
+				D442A7A22C1EA30300CDD897 /* CharactersListViewModelProtocol.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -245,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				D442A7C22C1EB89500CDD897 /* CharacterEntity.swift */,
+				D442A7E42C2113DF00CDD897 /* CharacterObject.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -287,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				D442A7B42C1EAE1C00CDD897 /* CharacterRepositoryProtocol.swift */,
+				D442A7F12C21356B00CDD897 /* CharacterRepositoryDBProtocol.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -296,6 +360,7 @@
 			children = (
 				D442A79D2C1EA0E900CDD897 /* StarWarsListRequest.swift */,
 				D442A7B72C1EAFAD00CDD897 /* CharacterListDataSource.swift */,
+				D442A7F32C2136A300CDD897 /* CharacterListDataSourceDB.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -304,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				D442A7BC2C1EB28C00CDD897 /* FetchCharactersListUseCase.swift */,
+				D442A7F52C2139B700CDD897 /* CharacterListDataBaseUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -325,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				D442A7C82C1EC0A300CDD897 /* CacheAsyncImage.swift */,
+				D45CCD8E2C220529005E7C26 /* NetworkMonitor.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -377,6 +444,90 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		D442A7EA2C21297F00CDD897 /* DataBaseLayer */ = {
+			isa = PBXGroup;
+			children = (
+				D442A7EB2C2129A400CDD897 /* ManagerDBProtocol.swift */,
+				D442A7EF2C212CAA00CDD897 /* RealmProvider.swift */,
+				D442A7ED2C212B8700CDD897 /* RealDataManager.swift */,
+			);
+			path = DataBaseLayer;
+			sourceTree = "<group>";
+		};
+		D453B7422C239B18006C2553 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D453B7432C239B1E006C2553 /* CharacterListTest */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D453B7432C239B1E006C2553 /* CharacterListTest */ = {
+			isa = PBXGroup;
+			children = (
+				D453B7442C239DDD006C2553 /* CharacterListViewModelTest.swift */,
+			);
+			path = CharacterListTest;
+			sourceTree = "<group>";
+		};
+		D45CCD902C2263A9005E7C26 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D45CCD982C2265CC005E7C26 /* Router */,
+				D45CCD932C22649A005E7C26 /* View */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		D45CCD932C22649A005E7C26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D45CCD912C2263C2005E7C26 /* TabBarMenu.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D45CCD942C226548005E7C26 /* FavoriteCharacter */ = {
+			isa = PBXGroup;
+			children = (
+				D45CCD9C2C2278A4005E7C26 /* ViewModel */,
+				D45CCD9B2C22670B005E7C26 /* Router */,
+				D45CCD972C22657C005E7C26 /* View */,
+			);
+			path = FavoriteCharacter;
+			sourceTree = "<group>";
+		};
+		D45CCD972C22657C005E7C26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D45CCD982C2265CC005E7C26 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D45CCD992C2265DD005E7C26 /* TabBarRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D45CCD9B2C22670B005E7C26 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D45CCD9F2C227D6A005E7C26 /* FavoriteCharacterRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D45CCD9C2C2278A4005E7C26 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D45CCD9D2C2278BF005E7C26 /* FavoriteCharacterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -387,6 +538,7 @@
 				D442A75B2C1D23BB00CDD897 /* Sources */,
 				D442A75C2C1D23BB00CDD897 /* Frameworks */,
 				D442A75D2C1D23BB00CDD897 /* Resources */,
+				D442A7E92C2113F500CDD897 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -395,6 +547,8 @@
 			name = platziExam;
 			packageProductDependencies = (
 				D442A7DC2C1FC00600CDD897 /* Lottie */,
+				D442A7E62C2113F400CDD897 /* RealmSwift */,
+				D453B73F2C2394D1006C2553 /* VideoPlayer */,
 			);
 			productName = platziExam;
 			productReference = D442A75F2C1D23BB00CDD897 /* platziExam.app */;
@@ -469,8 +623,9 @@
 			);
 			mainGroup = D442A7562C1D23BB00CDD897;
 			packageReferences = (
-				D442A7D72C1F6DB400CDD897 /* XCRemoteSwiftPackageReference "dotlottie-ios" */,
 				D442A7DA2C1F702D00CDD897 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				D442A7E32C21123F00CDD897 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				D42FE57B2C236E5A003C4D51 /* XCRemoteSwiftPackageReference "VideoPlayer" */,
 			);
 			productRefGroup = D442A7602C1D23BB00CDD897 /* Products */;
 			projectDirPath = "";
@@ -515,7 +670,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D453B73E2C23946A006C2553 /* VideoPlayerView.swift in Sources */,
 				D442A7A02C1EA28B00CDD897 /* CharactersListViewModel.swift in Sources */,
+				D442A7EC2C2129A400CDD897 /* ManagerDBProtocol.swift in Sources */,
 				D442A7B52C1EAE1C00CDD897 /* CharacterRepositoryProtocol.swift in Sources */,
 				D442A7982C1E9E5800CDD897 /* AsyncRepositoryType.swift in Sources */,
 				D442A7CC2C1EC18600CDD897 /* CharacterCell.swift in Sources */,
@@ -523,22 +680,33 @@
 				D442A7C32C1EB89600CDD897 /* CharacterEntity.swift in Sources */,
 				D442A7D62C1F2AED00CDD897 /* CharactersListRouter.swift in Sources */,
 				D442A7C92C1EC0A300CDD897 /* CacheAsyncImage.swift in Sources */,
+				D442A7EE2C212B8700CDD897 /* RealDataManager.swift in Sources */,
+				D442A7E52C2113DF00CDD897 /* CharacterObject.swift in Sources */,
+				D442A7F22C21356C00CDD897 /* CharacterRepositoryDBProtocol.swift in Sources */,
 				D442A79C2C1E9F5D00CDD897 /* NetworkError.swift in Sources */,
 				D442A7CF2C1F278F00CDD897 /* CharacterDetailViewModel.swift in Sources */,
 				D442A7AA2C1EA51E00CDD897 /* CharactersList.swift in Sources */,
+				D45CCDA02C227D6A005E7C26 /* FavoriteCharacterRouter.swift in Sources */,
 				D442A78E2C1D26AC00CDD897 /* StarWarsCharactersListView.swift in Sources */,
 				D442A7C62C1EBBA900CDD897 /* AppRouter.swift in Sources */,
+				D45CCD9A2C2265DD005E7C26 /* TabBarRouter.swift in Sources */,
 				D442A7652C1D23BB00CDD897 /* ContentView.swift in Sources */,
+				D45CCD9E2C2278BF005E7C26 /* FavoriteCharacterViewModel.swift in Sources */,
 				D442A7B12C1EACBF00CDD897 /* String+.swift in Sources */,
+				D442A7F42C2136A300CDD897 /* CharacterListDataSourceDB.swift in Sources */,
+				D442A7F62C2139B700CDD897 /* CharacterListDataBaseUseCase.swift in Sources */,
 				D442A7C12C1EB7EF00CDD897 /* Character.swift in Sources */,
+				D45CCD8F2C220529005E7C26 /* NetworkMonitor.swift in Sources */,
 				D442A7D32C1F282000CDD897 /* CharacterDetailView.swift in Sources */,
 				D442A79E2C1EA0E900CDD897 /* StarWarsListRequest.swift in Sources */,
 				D442A7922C1E9CBA00CDD897 /* APIRequest.swift in Sources */,
 				D442A7BD2C1EB28C00CDD897 /* FetchCharactersListUseCase.swift in Sources */,
+				D442A7F02C212CAA00CDD897 /* RealmProvider.swift in Sources */,
 				D442A7942C1E9CD700CDD897 /* RequestMethod.swift in Sources */,
 				D442A7B82C1EAFAD00CDD897 /* CharacterListDataSource.swift in Sources */,
-				D442A7A32C1EA30300CDD897 /* CharactersListViewModelrotocol.swift in Sources */,
+				D442A7A32C1EA30300CDD897 /* CharactersListViewModelProtocol.swift in Sources */,
 				D442A79A2C1E9E8B00CDD897 /* AsyncRepository.swift in Sources */,
+				D45CCD922C2263C2005E7C26 /* TabBarMenu.swift in Sources */,
 				D442A7632C1D23BB00CDD897 /* platziExamApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,6 +715,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D453B7452C239DDD006C2553 /* CharacterListViewModelTest.swift in Sources */,
 				D442A7742C1D23BE00CDD897 /* platziExamTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -703,8 +872,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"platziExam/Preview Content\"";
+				DEVELOPMENT_TEAM = 42CVGKEEKF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = platziExam/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -731,8 +902,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"platziExam/Preview Content\"";
+				DEVELOPMENT_TEAM = 42CVGKEEKF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = platziExam/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -865,12 +1038,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D442A7D72C1F6DB400CDD897 /* XCRemoteSwiftPackageReference "dotlottie-ios" */ = {
+		D42FE57B2C236E5A003C4D51 /* XCRemoteSwiftPackageReference "VideoPlayer" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/LottieFiles/dotlottie-ios";
+			repositoryURL = "https://github.com/wxxsw/VideoPlayer";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.4;
 			};
 		};
 		D442A7DA2C1F702D00CDD897 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
@@ -881,6 +1054,14 @@
 				minimumVersion = 4.4.3;
 			};
 		};
+		D442A7E32C21123F00CDD897 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -888,6 +1069,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D442A7DA2C1F702D00CDD897 /* XCRemoteSwiftPackageReference "lottie-spm" */;
 			productName = Lottie;
+		};
+		D442A7E62C2113F400CDD897 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D442A7E32C21123F00CDD897 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		D453B73F2C2394D1006C2553 /* VideoPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D42FE57B2C236E5A003C4D51 /* XCRemoteSwiftPackageReference "VideoPlayer" */;
+			productName = VideoPlayer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

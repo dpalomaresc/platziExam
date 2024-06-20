@@ -11,7 +11,13 @@ import SwiftUI
 struct platziExamApp: App {
     var body: some Scene {
         WindowGroup {
-            AppRouter.buildStarWarsCharacterstView()
+            if isProduction {
+                TabBarRouter.build()
+            }
         }
+    }
+    
+    private var isProduction: Bool {
+        NSClassFromString("XCTestCase") == nil
     }
 }

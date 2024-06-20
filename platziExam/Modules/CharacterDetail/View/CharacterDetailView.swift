@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct CharacterDetailView<Model>: View where Model: CharacterDetailViewModelProtocol {
     @State private var viewModel: Model
-    
+    @State private var player = AVPlayer()
+
     init(viewModel: Model) {
         self.viewModel = viewModel
     }
@@ -24,23 +26,34 @@ struct CharacterDetailView<Model>: View where Model: CharacterDetailViewModelPro
                 }
                 .scaledToFit()
                 .frame(height: 300)
+                .cornerRadius(20)
                 .containerRelativeFrame(.horizontal)
-                
-                HStack {
-                    Text(viewModel.character.name)
-                        .textCase(.uppercase)
-                        .font(.subheadline)
-                    
-                    Spacer()
-                    Divider()
-                    Spacer()
-                    
-                    Text(viewModel.character.name)
-                        .font(.headline)
-                }
-                .padding(12)
+                Text(viewModel.character.name)
+                    .textCase(.uppercase)
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                Spacer()
+                contentDescription(title: "Genero:", desc: viewModel.character.gender.rawValue)
+                contentDescription(title: "Hair color:", desc: viewModel.character.hairColor)
+                contentDescription(title: "Mass:", desc: viewModel.character.mass)
+                contentDescription(title: "Skin Color:", desc: viewModel.character.skinColor)
+                VideoPlayerView().frame(maxWidth: .infinity)
             }
         }.background(.backGroundApp)
+    }
+    
+    private func contentDescription(title: String, desc: String) -> some View {
+        VStack {
+            HStack {
+                Text(title)
+                    .font(.title2).bold()
+                    .foregroundColor(.white)
+                Text(desc)
+                    .font(.title3)
+                    .foregroundColor(.white)
+                Spacer()
+            }.padding(.leading, 30)
+        }
     }
 }
 
