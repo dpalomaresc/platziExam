@@ -31,22 +31,4 @@ struct RealmProvider {
     public static var `default`: Realm? = {
         return RealmProvider(config: RealmProvider.defaultConfig).realm
     }()
-    
-    @MainActor
-    func openFlexibleSyncRealm() async throws -> Realm {
-        // Pass object types to the Flexible Sync configuration
-        // as a temporary workaround for not being able to add complete schema
-        // for a Flexible Sync app
-        let realm = try await Realm(configuration: Realm.Configuration(schemaVersion: 1), downloadBeforeOpen: .always)
-        return realm
-    }
-}
-
-actor RealmWithActor {
-    // An implicitly-unwrapped optional is used here to let us pass `self` to
-    // `Realm(actor:)` within `init`
-    var realm: Realm!
-    init() async throws {
-        realm = try await Realm(actor: self)
-    }
 }

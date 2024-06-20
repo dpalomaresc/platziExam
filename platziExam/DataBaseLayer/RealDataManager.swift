@@ -58,17 +58,11 @@ extension RealmDataManager: ManagerDBProtocol {
     func delete(object: Storable) async throws {
         guard let realm = realm, let object = object as? Object else { throw RealmError.eitherRealmIsNilOrNotRealmSpecificModel }
         try await realm.asyncWrite {
-//
             let predicate = NSPredicate(format: "name == %@", (object as? CharacterObject)?.name ?? "" )
             let objectsToDelete = realm.objects(CharacterObject.self).filter("name == %@", (object as? CharacterObject)?.name ?? "")
             realm.delete(objectsToDelete)
-
-//            if let productToDelete = realm.object(Object.self)
-//                                          .filter(predicate).first {
-//                  realm.delete(productToDelete)
             }
         }
-//        realm.delete(Realm.objects(ChecklistDataModel.self).filter("name=%@",checklists[indexPath.row].name))
     
     func deleteAll<T>(_ model: T.Type) throws where T : Storable {
         guard let realm = realm, let model = model as? Object.Type else { throw RealmError.eitherRealmIsNilOrNotRealmSpecificModel }
@@ -79,21 +73,7 @@ extension RealmDataManager: ManagerDBProtocol {
             }
         }
     }
-    
-//    func fetch<T: Storable>(_ model: T.Type, predicate: NSPredicate?, sorted: Sorted?, completion: @escaping (([T]) -> ())) {
-//        guard let realm = realm, let model = model as? Object.Type else { return }
-//        DispatchQueue.main.async {
-//            var objects = realm.objects(model)
-//            if let predicate = predicate {
-//                objects = objects.filter(predicate)
-//            }
-//            if let sorted = sorted {
-//                objects = objects.sorted(byKeyPath: sorted.key, ascending: sorted.ascending)
-//            }
-//            completion(objects.compactMap { $0 as? T })
-//        }
-//    }
-    
+
    @MainActor
     func fetch<T: Storable>(_ model: T.Type, predicate: NSPredicate?, sorted: Sorted?) async -> [T] {
         guard let realm = realm, let model = model as? Object.Type else { return [] }
